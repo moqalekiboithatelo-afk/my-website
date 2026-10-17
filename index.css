@@ -1,0 +1,63 @@
+/* Global styles: colour variables, base typography and shared utility classes. */
+
+:root {
+  --color-primary: #3b82f6;
+  --color-primary-dark: #1d4ed8;
+  --color-primary-soft: #dbeafe;
+  --color-danger: #ef4444;
+  --color-danger-dark: #dc2626;
+  --color-danger-soft: #fef2f2;
+  --color-success-bg: #dcfce7;
+  --color-success-text: #166534;
+  --color-error-text: #b91c1c;
+  --color-text: #e5eefb;
+  --color-muted: #9fb3c8;
+  --color-border: rgba(148, 163, 184, 0.25);
+  --color-surface: #101b2f;
+  --color-surface-2: #162540;
+  --color-surface-3: #0d172a;
+  --color-page: #091322;
+  --shadow-soft: 0 18px 35px rgba(8, 15, 31, 0.45);
+  --shadow-card: 0 10px 24px rgba(30, 64, 175, 0.25);
+  --radius: 16px;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-page);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(59, 130, 246, 0.22), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.18), transparent 30%),
+    var(--color-page);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+/* Hides content visually but keeps it available to screen readers. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
